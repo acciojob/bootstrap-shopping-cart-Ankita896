@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Shopping Cart Layout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .block-heading {
+            text-align: center;
+            color: #3b99e0;
+        }
+        .summary {
+            padding: 20px;
+            border-bottom: 2px solid #5ea4f3;
+            background-color: #f7fbff;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h1 class="block-heading">Shopping Cart</h1>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="product">
+                    <h2 class="block-heading">Product Block</h2>
+                    <div class="row">
+                        <div class="col">
+                            <img src="image1.jpg" class="img-fluid" alt="Product 1">
+                        </div>
+                        <div class="col">
+                            <img src="image2.jpg" class="img-fluid" alt="Product 2">
+                        </div>
+                        <div class="col">
+                            <img src="image3.jpg" class="img-fluid" alt="Product 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="summary">
+                    <h3>Price Summary</h3>
+                    <p>Total Price: $XX.XX</p>
+                    <button class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
